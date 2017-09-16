@@ -173,9 +173,10 @@ GameObject:
   - component: {fileID: 54904559420513488}
   - component: {fileID: 136208378225446214}
   - component: {fileID: 114140563328644356}
+  - component: {fileID: 114233447183415224}
   m_Layer: 0
   m_Name: soldier
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1301,7 +1302,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156128489428676}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.011, y: 1.17, z: 0}
+  m_LocalPosition: {x: -1.11, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4453038872917420}
@@ -1673,6 +1674,18 @@ MonoBehaviour:
     m_Bits: 256
   groundCheck: {fileID: 4193456326791654}
   jumpHeight: 200
+--- !u!114 &114233447183415224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156128489428676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7299e1038114d24eb09e4f3b50afb3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullHealth: 100
 --- !u!114 &114238669054380968
 MonoBehaviour:
   m_ObjectHideFlags: 1

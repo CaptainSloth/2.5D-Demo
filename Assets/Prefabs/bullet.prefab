@@ -104,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0194839069495b74bb2a226f62059e47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
-  damage: 5
+  range: 20
+  damage: 10
 --- !u!120 &120072015080978498
 LineRenderer:
   m_ObjectHideFlags: 1

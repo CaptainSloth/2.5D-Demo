@@ -23,6 +23,15 @@ public class shootBullet : MonoBehaviour {
 
         if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
+            if(shootHit.collider.tag == "Enemy")
+            {
+                enemyHealth _enemyHealth = shootHit.collider.GetComponent<enemyHealth>();
+                if(_enemyHealth != null)
+                {
+                    _enemyHealth.addDamage(damage);
+                    _enemyHealth.damageFX(shootHit.point, -shootRay.direction);
+                }
+            }
             //Hit an Enemy goes here
             gunLine.SetPosition(1, shootHit.point);
         }

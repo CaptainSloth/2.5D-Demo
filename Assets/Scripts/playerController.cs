@@ -5,6 +5,7 @@ public class playerController : MonoBehaviour {
     //movement variables
     public float runSpeed;
     public float walkSpeed;
+    bool running;
 
     Rigidbody rb;
     Animator animator;
@@ -33,6 +34,8 @@ public class playerController : MonoBehaviour {
 
     void FixedUpdate()
     {
+        running = false;
+
         if(grounded && Input.GetAxis("Jump") > 0)
         {
             grounded = false;
@@ -62,6 +65,7 @@ public class playerController : MonoBehaviour {
         else
         {
             rb.velocity = new Vector3(move * runSpeed, rb.velocity.y, 0f);
+            if (Mathf.Abs(move)>0) running = true;
         }
         
         
@@ -83,4 +87,13 @@ public class playerController : MonoBehaviour {
         if (facingRight) return 1;
         else return -1;
     }
+
+    public bool getRunning()
+    {
+        return running;
+    }
+
+
+
+
 }

@@ -79,14 +79,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Animation\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\ammoPickup.cs" />
     <Compile Include="Assets\Scripts\DestroyMe.cs" />
+    <Compile Include="Assets\Scripts\doorController.cs" />
     <Compile Include="Assets\Scripts\dynamicCamera.cs" />
+    <Compile Include="Assets\Scripts\elevatorController.cs" />
     <Compile Include="Assets\Scripts\enemyDamage.cs" />
+    <Compile Include="Assets\Scripts\enemyHealth.cs" />
     <Compile Include="Assets\Scripts\eraser.cs" />
+    <Compile Include="Assets\Scripts\explosionController.cs" />
     <Compile Include="Assets\Scripts\fireBullet.cs" />
+    <Compile Include="Assets\Scripts\gunMelee.cs" />
+    <Compile Include="Assets\Scripts\healthPickup.cs" />
+    <Compile Include="Assets\Scripts\melee.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
+    <Compile Include="Assets\Scripts\randZombieTexture.cs" />
     <Compile Include="Assets\Scripts\shootBullet.cs" />
+    <Compile Include="Assets\Scripts\shootFireBall.cs" />
+    <Compile Include="Assets\Scripts\zombieController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -18,6 +18,9 @@ public class playerHealth : MonoBehaviour {
     Color flashColor = new Color(255f, 255f, 255f, 1f);
     float flashSpeed = 5f;
     bool damaged = false;
+    public Text endGameDedText;
+    public restartGame MCP;
+
 
     AudioSource playerAudioSource;
     
@@ -69,6 +72,9 @@ public class playerHealth : MonoBehaviour {
         Instantiate(playerDeathFX, transform.position, Quaternion.Euler(new Vector3(-90, 0, 0)));
         damageScreen.color = flashColor;
         Destroy(gameObject);
+        Animator endGameAnimation = endGameDedText.GetComponent<Animator>();
+        endGameAnimation.SetTrigger("endGame");
+        MCP.restartTheGame();
     }
 
 }

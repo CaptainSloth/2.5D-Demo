@@ -76,6 +76,12 @@ public class enemyHealth : MonoBehaviour {
     {
         //turn off movement
         // create ragdoll
+        zombieController zombie = GetComponentInChildren<zombieController>();
+        if(zombie != null)
+        {
+            zombie.ragdollDeath();
+        }
+
         AudioSource.PlayClipAtPoint(deathSound, transform.position, 0.15f);
 
         Destroy(gameObject.transform.root.gameObject);

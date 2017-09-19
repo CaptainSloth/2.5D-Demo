@@ -2155,7 +2155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d824acd6b569a4fa9623616c06833a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipModel: {fileID: 100096, guid: d4bf2455b5c3968458b14baf1928f3fd, type: 3}
+  flipModel: {fileID: 1426024458018078}
+  ragdollPrefab: {fileID: 1199799446703944, guid: 2e7e28c9298cd9a44a05e850c6cd43ef,
+    type: 2}
   idleSounds:
   - {fileID: 8300000, guid: 450741cde6ffb1e47ba077a16bcc8c17, type: 3}
   - {fileID: 8300000, guid: 41cd35191349930469618872026db40e, type: 3}

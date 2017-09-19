@@ -34,6 +34,17 @@ public class melee : MonoBehaviour {
             //do Damage
             Collider[] attacked = Physics.OverlapSphere(transform.position, knockBackRadius, shootableMask);
 
+            int i = 0;
+            while(i< attacked.Length)
+            {
+                if (attacked[i].tag == "Enemy")
+                {
+                    enemyHealth doDamage = attacked[i].GetComponent<enemyHealth>();
+                    doDamage.addDamage(damage);
+                    doDamage.damageFX(transform.position, transform.localEulerAngles);
+                }
+            }
+            i++;
         }
 	}
 }
